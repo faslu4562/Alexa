@@ -1,8 +1,3 @@
-/* Codded by @phaticusthiccy
-Telegram: t.me/phaticusthiccy
-Instagram: www.instagram.com/kyrie.baran
-*/
-
 const Alexa = require('../events');
 const {MessageType,Mimetype} = require('@adiwajshing/baileys');
 const fs = require('fs');
@@ -122,10 +117,19 @@ let id = match[1];
     ffmpeg(location)
         .format('mp3')
         .save('output.mp3')
-        .on('end', async () => {                           
-            await message.client.sendMessage(id, fs.readFileSync('output.mp3'), MessageType.audio, {mimetype: Mimetype.mp4Audio, quoted: message.data, thumbnail: thumbnail: img,externalAdReply:{title: Config.BOT, body: 'simple wa bot', previewType:"text",thumbnail:thumbnail: img,sourceUrl: 'https://github.com/Afx-Abu/Abu_ser', ptt: true,quoted: { key: { participant : '0@s.whatsapp.net'},message: {orderMessage: {itemCount : 990,status: 1,surface : 1,message: Config.SKV,orderTitle: `THIS IS NEW?`,thumbnail: img, sellerJid: Config.JID }}}});
+        .on('end', async () => {       
+            const options = {}
+            options.linkPreview = {
+                            head: "𝑨𝑳𝑬𝑿𝑨",
+                            body: "© 𝑾𝑨 𝑩𝑶𝑻 ©",
+                            thumbnail: "https://i.imgur.com/4ZTPxtG.jpeg",
+                            sourceUrl: "https://github.com/Afx-Abu/Alexa",
+                            }
+options.duration = Config.SAID,                            
+            await message.client.sendMessage(id, fs.readFileSync('output.mp3'), MessageType.audio, {mimetype: Mimetype.mp4Audio, quoted: message.data, ptt: true,quoted: { key: { participant : '0@s.whatsapp.net'},message: {orderMessage: {itemCount : 990,status: 1,surface : 1,message: Config.SKV,orderTitle: `THIS IS NEW?`,thumbnail: img, sellerJid: Config.JID }}}});
 
 });}));
+
 
 Alexa.addCommand({pattern: 'unvoice', fromMe: true, desc: Lang.UV_DESC}, (async (message, match) => {    
     if (message.reply_message === false);
@@ -198,4 +202,3 @@ Alexa.addCommand({pattern: 'unimage', fromMe: true, dontAddCommandList: true}, (
     return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
  }));
 }
-
