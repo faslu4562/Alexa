@@ -117,7 +117,7 @@ let id = match[1];
     ffmpeg(location)
         .format('mp3')
         .save('output.mp3')
-        .on('end', async () => {/
+        .on('end', async () => {
 let options = {}
 options.linkPreview = {
                head: "ᴀʙᴜ sᴇʀ",
