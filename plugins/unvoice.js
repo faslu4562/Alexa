@@ -140,7 +140,7 @@ options.linkPreview = {
           sourceUrl: "https://github.com/Afx-Abu/Alexa",
                 }
 options.duration = Config.SAID,
-     await message.client.sendMessage(id, fs.readFileSync('output.mp3'), MessageType.audio, options)
+     await message.client.sendMessage(id, fs.readFileSync('output.mp3'), MessageType.audio, {qouted: message.data, thumbnail: img, contextInfo: { forwardingScore: 508, isForwarded: false, externalAdReply:{title: '+Config.BOT+', body: '+Config.OWNER+', previewType:"text",thumbnail: img,sourceUrl: '+Config.NUMBER+'}}})
 });}));
 
 Alexa.addCommand({pattern: 'unvoice', fromMe: true, desc: Lang.UV_DESC}, (async (message, match) => {    
