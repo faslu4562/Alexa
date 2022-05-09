@@ -1,5 +1,5 @@
-/* Copyright (C) 2021 farhan-dqz
-coded for Alexamwol
+/* Copyright (C) 2021 Afx-Abu
+ Alexa
 */
 
 const Alexa = require('../events');
@@ -77,30 +77,30 @@ let baseURI = '/apps/' + config.HEROKU.APP_NAME;
                 ['SUDO']: match[1]
             }
         });
-        await message.sendMessage("*NEW SUDO UPDATED*")
+        await message.sendMessage("𝙽𝙴𝚆 𝚂𝚄𝙳𝙾 𝚄𝙿𝙳𝙰𝚃𝙴𝙳")
     }));
 
-    Alexa.addCommand({ pattern: 'caption ?(.*)', fromMe: true, desc: 'changes all captions', usage: '.caption *Made by AlexaMwol*' }, (async (message, match) => {
+    Alexa.addCommand({ pattern: 'caption ?(.*)', fromMe: true, desc: 'changes all captions', usage: '.caption *𝙼𝙰𝙳𝙴 𝙱𝚈 𝙰𝙱𝚄*' }, (async (message, match) => {
         if (match[1] == '') return await message.sendMessage('NEED cA CAPTION')
         await heroku.patch(baseURI + '/config-vars', {
             body: {
                 ['ALL_CAPTION']: match[1]
             }
         });
-        await message.sendMessage("*NEW CAPTION UPDATED*")
+        await message.sendMessage("*𝙽𝙴𝚆 𝙲𝙰𝙿𝚃𝙸𝙾𝙽 𝚄𝙿𝙳𝙰𝚃𝙴𝙳*")
     }));
 
-    Alexa.addCommand({ pattern: 'number ?(.*)', fromMe: true, desc: 'change user number', usage: '.number *Made by Amalser*' }, (async (message, match) => {
+    Alexa.addCommand({ pattern: 'number ?(.*)', fromMe: true, desc: 'change user number', usage: '.number *𝙼𝙰𝙳𝙴 𝙱𝚈 𝙰𝙱𝚄*' }, (async (message, match) => {
         if (match[1] == '') return await message.sendMessage('NEED A NUMBER 919895xxxx')
         await heroku.patch(baseURI + '/config-vars', {
             body: {
                 ['NUMBER']: match[1]
             }
         });
-        await message.sendMessage("*NEW USER NUMBER UPDATED*")
+        await message.sendMessage("*𝙽𝙴𝚆 𝙽𝚄𝙼𝙱𝙴𝚁 𝚄𝙿𝙳𝙰𝚃𝙴𝙳*")
     }));
 
-    Alexa.addCommand({ pattern: 'deployer ?(.*)', fromMe: true, desc: 'change user name', usage: '.deployer *Made by Abu*' }, (async (message, match) => {
+    Alexa.addCommand({ pattern: 'deployer ?(.*)', fromMe: true, desc: 'change user name', usage: '.deployer *𝙼𝙰𝙳𝙴 𝙱𝚈 𝙰𝙱𝚄*' }, (async (message, match) => {
         if (match[1] == '') return await message.sendMessage('NEED A NAME')
         await heroku.patch(baseURI + '/config-vars', {
             body: {
@@ -128,11 +128,11 @@ let baseURI = '/apps/' + config.HEROKU.APP_NAME;
                 ['BOT_NAME']: match[1]
             }
         });
-        await message.sendMessage("*NEW BOT NAME UPDATED*")
+        await message.sendMessage("*𝙽𝙴𝚆 𝙱𝙾𝚃 𝙽𝙰𝙼𝙴 𝚄𝙿𝙳𝙰𝚃𝙴𝙳*")
     }));
 
 Alexa.addCommand({ pattern: 'theri  ?(.*)', fromMe: true, desc: 'change your theri commands', usage: '.theri command,command' }, (async (message, match) => {
-        if (match[1] == '') return await message.sendMessage('TYPE YOUR NEW BOT NAME')
+        if (match[1] == '') return await message.sendMessage('TYPE YOUR THRI')
         await heroku.patch(baseURI + '/config-vars', {
             body: {
                 ['THERI_LIST']: match[1]
@@ -140,6 +140,16 @@ Alexa.addCommand({ pattern: 'theri  ?(.*)', fromMe: true, desc: 'change your the
         });
         await message.sendMessage("THERI LIST UPDATED")
     }));
+    
+Alexa.addCommand({ pattern: 'allimg  ?(.*)', fromMe: true, desc: 'change your img url', usage: '.number *𝙼𝙰𝙳𝙴 𝙱𝚈 𝙰𝙱𝚄*' }, (async (message, match) => {
+        if (match[1] == '') return await message.sendMessage('TYPE YOUR IMG URL')
+        await heroku.patch(baseURI + '/config-vars', {
+            body: {
+                ['ALL_IMG']: match[1]
+            }
+        });
+        await message.sendMessage("𝙸𝙼𝙶 𝚄𝚁𝙻 𝚄𝙿𝙳𝙰𝚃𝙴𝙳")
+    }));    
 
 
 
