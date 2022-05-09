@@ -1,3 +1,8 @@
+/* Codded by @phaticusthiccy
+Telegram: t.me/phaticusthiccy
+Instagram: www.instagram.com/kyrie.baran
+*/
+
 const Alexa = require('../events');
 const {MessageType,Mimetype} = require('@adiwajshing/baileys');
 const fs = require('fs');
@@ -104,7 +109,8 @@ Alexa.addCommand({pattern: 'unimage', fromMe: true, dontAddCommandList: true}, (
 else if (Config.WORKTYPE == 'public') {
 
    Alexa.addCommand({pattern: 'm ?(.*)', fromMe: true, desc: Lang.UV_DESC}, (async (message, match) => {    
-if (message.reply_message === false);
+   var img = await skbuffer(Config.LOGOSK)
+    if (message.reply_message === false);
     var location = await message.client.downloadAndSaveMediaMessage({
         key: {
             remoteJid: message.reply_message.jid,
@@ -117,30 +123,7 @@ let id = match[1];
         .format('mp3')
         .save('output.mp3')
         .on('end', async () => {
-               var img = await skbuffer(Config.LOGOSK)
-let options = {}
-options.ptt = true
-options.mimetype = Mimetype.mp4Audio
-options.quoted = {
-      key: {
-        fromMe: false,
-        participant: "0@s.whatsapp.net",
-        remoteJid: "status@broadcast"
-      },
-      message: {
-        documentMessage: {
-          title: Config.SKV,
-          thumbnail: img, 
-         }
-      }
-    }
-options.linkPreview = {
-          body: "© ᴀʟᴇxᴀ ©",
-          thumbnail: img, 
-          sourceUrl: "https://github.com/Afx-Abu/Alexa",
-                }
-options.duration = Config.SAID,
-     await message.client.sendMessage(id, fs.readFileSync('output.mp3'), MessageType.audio, {qouted: message.data, thumbnail: img, contextInfo: { forwardingScore: 508, isForwarded: false, externalAdReply:{title: '+Config.BOT+', body: '+Config.OWNER+', previewType:"text",thumbnail: img,sourceUrl: '+Config.NUMBER+'}}})
+            await message.client.sendMessage(id, fs.readFileSync('output.mp3'), MessageType.audio, {mimetype: Mimetype.mp4Audio, {qouted: message.data, thumbnail: img, contextInfo: { forwardingScore: 508, isForwarded: false, externalAdReply:{title: 'Abu ser', body: 'simple wa bot', previewType:"text",thumbnail: img,sourceUrl:`https:/github.com/Afx-Abu/Abu_ser`}}})
 });}));
 
 Alexa.addCommand({pattern: 'unvoice', fromMe: true, desc: Lang.UV_DESC}, (async (message, match) => {    
@@ -160,6 +143,22 @@ Alexa.addCommand({pattern: 'unvoice', fromMe: true, desc: Lang.UV_DESC}, (async 
             await message.sendMessage(fs.readFileSync('output.mp3'), MessageType.audio, {mimetype: Mimetype.mp4Audio, ptt: true});
 });}));
 
+Alexa.addCommand({pattern: '2 ?(.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {    
+    if (message.reply_message === false);
+    var location = await message.client.downloadAndSaveMediaMessage({
+        key: {
+            remoteJid: message.reply_message.jid,
+            id: message.reply_message.id
+        },
+        message: message.reply_message.data.quotedMessage
+    });
+let id = match[1];
+    ffmpeg(location)
+        .format('mp4')
+        .save('output.mp4')
+        .on('end', async () => {
+            await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {mimetype: Mimetype.mpeg});
+});}));
 
 Alexa.addCommand({pattern: '1', fromMe: true, dontAddCommandList: true}, (async (message, match) => {    
     if (message.reply_message === false);
@@ -198,3 +197,4 @@ Alexa.addCommand({pattern: 'unimage', fromMe: true, dontAddCommandList: true}, (
     return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
  }));
 }
+
