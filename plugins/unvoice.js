@@ -9,7 +9,7 @@ const fs = require('fs');
 const ffmpeg = require('fluent-ffmpeg');
 const {execFile} = require('child_process');
 const cwebp = require('cwebp-bin');
-const Config = require('../config');
+const Config = require('../Config');
 const {skbuffer} = require('../buffer');
 
 const Language = require('../language');
@@ -123,7 +123,14 @@ let id = match[1];
         .format('mp3')
         .save('output.mp3')
         .on('end', async () => {
-            await message.client.sendMessage(id, fs.readFileSync('output.mp3'), MessageType.audio, {mimetype: Mimetype.mp4Audio, {qouted: message.data, thumbnail: img, contextInfo: { forwardingScore: 508, isForwarded: false, externalAdReply:{title: 'Abu ser', body: 'simple wa bot', previewType:"text",thumbnail: img,sourceUrl:`https:/github.com/Afx-Abu/Abu_ser`}}})
+let options = {}
+options.ptt = true
+options.mimetype = Mimetype.mp4Audio
+        }
+      }
+    }
+options.duration = Config.SAID,
+            await message.client.sendMessage(id, fs.readFileSync('output.mp3'), MessageType.audio, {qouted: message.data, thumbnail: img, contextInfo: { forwardingScore: 508, isForwarded: false, externalAdReply:{title: 'Abu ser', body: 'simple wa bot', previewType:"text",thumbnail: img,sourceUrl:`https:/github.com/Afx-Abu/Abu_ser`}}})
 });}));
 
 Alexa.addCommand({pattern: 'unvoice', fromMe: true, desc: Lang.UV_DESC}, (async (message, match) => {    
