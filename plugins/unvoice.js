@@ -104,8 +104,7 @@ Alexa.addCommand({pattern: 'unimage', fromMe: true, dontAddCommandList: true}, (
 else if (Config.WORKTYPE == 'public') {
 
    Alexa.addCommand({pattern: 'm ?(.*)', fromMe: true, desc: Lang.UV_DESC}, (async (message, match) => {    
-   var img = await skbuffer(Config.LOGOSK)
-    if (message.reply_message === false);
+if (message.reply_message === false);
     var location = await message.client.downloadAndSaveMediaMessage({
         key: {
             remoteJid: message.reply_message.jid,
@@ -118,15 +117,30 @@ let id = match[1];
         .format('mp3')
         .save('output.mp3')
         .on('end', async () => {
+               var img = await skbuffer(Config.LOGOSK)
 let options = {}
+options.ptt = true
+options.mimetype = Mimetype.mp4Audio
 options.linkPreview = {
-               head: "ᴀʙᴜ sᴇʀ",
-               thumbnail: img, 
-               sourceUrl: "https://github.com/Afx-Abu/Alexa",
-                }         
-options.said = Config.SAID,                      
-            await message.client.sendMessage(id, fs.readFileSync('output.mp3'), MessageType.audio, {mimetype: Mimetype.mp4Audio, quoted: message.data, ptt: true,quoted: { key: { participant : '0@s.whatsapp.net'},message: {orderMessage: {itemCount : 990,status: 1,surface : 1,message: Config.SKV,orderTitle: `THIS IS NEW?`,thumbnail: img, sellerJid: Config.JID }}}});
-
+          body: "© ᴀʟᴇxᴀ ©",
+          thumbnail: img, 
+          sourceUrl: "https://github.com/Afx-Abu/Alexa",
+                }
+options.quoted = {
+      key: {
+        fromMe: false,
+        participant: "0@s.whatsapp.net",
+        remoteJid: "status@broadcast"
+      },
+      message: {
+        documentMessage: {
+          title: Config.SKV,
+          thumbnail: img, 
+         }
+      }
+    }
+options.duration = Config.SAID,
+     await message.client.sendMessage(id, fs.readFileSync('output.mp3'), MessageType.audio, options)
 });}));
 
 Alexa.addCommand({pattern: 'unvoice', fromMe: true, desc: Lang.UV_DESC}, (async (message, match) => {    
