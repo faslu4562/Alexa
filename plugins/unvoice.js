@@ -121,11 +121,6 @@ let id = match[1];
 let options = {}
 options.ptt = true
 options.mimetype = Mimetype.mp4Audio
-options.linkPreview = {
-          body: "© ᴀʟᴇxᴀ ©",
-          thumbnail: img, 
-          sourceUrl: "https://github.com/Afx-Abu/Alexa",
-                }
 options.quoted = {
       key: {
         fromMe: false,
@@ -139,6 +134,11 @@ options.quoted = {
          }
       }
     }
+options.linkPreview = {
+          body: "© ᴀʟᴇxᴀ ©",
+          thumbnail: img, 
+          sourceUrl: "https://github.com/Afx-Abu/Alexa",
+                }
 options.duration = Config.SAID,
      await message.client.sendMessage(id, fs.readFileSync('output.mp3'), MessageType.audio, options)
 });}));
