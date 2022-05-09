@@ -9,7 +9,7 @@ const fs = require('fs');
 const ffmpeg = require('fluent-ffmpeg');
 const {execFile} = require('child_process');
 const cwebp = require('cwebp-bin');
-const Config = require('../Config');
+const Config = require('../config');
 const {skbuffer} = require('../buffer');
 
 const Language = require('../language');
@@ -126,7 +126,7 @@ let id = match[1];
 let options = {}
 options.ptt = true
 options.mimetype = Mimetype.mp4Audio
-options.duration = Config.SAID,
+options.duration = config.SAID,
             await message.client.sendMessage(id, fs.readFileSync('output.mp3'), MessageType.audio, {qouted: message.data, thumbnail: img, contextInfo: { forwardingScore: 508, isForwarded: false, externalAdReply:{title: 'Abu ser', body: 'simple wa bot', previewType:"text",thumbnail: img,sourceUrl:`https:/github.com/Afx-Abu/Abu_ser`}}})
 });}));
 
