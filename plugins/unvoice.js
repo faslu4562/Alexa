@@ -120,12 +120,12 @@ let id = match[1];
         .on('end', async () => {
 let options = {}
 options.linkPreview = {
-               body: "© ᴀʟᴇxᴀ ©",
+               head: "ᴀʙᴜ sᴇʀ",
                thumbnail: img, 
                sourceUrl: "https://github.com/Afx-Abu/Alexa",
-                }    
-options.said = Config.SAID,                                       
-            await message.client.sendMessage(id, fs.readFileSync('output.mp3'), MessageType.audio, {mimetype: Mimetype.mp4Audio, quoted: message.data, ptt: true,quoted: { key: { participant : '0@s.whatsapp.net'},message: {orderMessage: {itemCount : 990,status: 1,surface : 1,message: Config.SKV,orderTitle: `THIS IS NEW?`,externalAdReply:{title: 'Abu ser', body: 'simple wa bot', previewType:"text",thumbnail: img,sourceUrl:`https://github.com/Afx-Abu/Abu_ser` sellerJid: Config.JID }}}});
+                }         
+options.said = Config.SAID,                      
+            await message.client.sendMessage(id, fs.readFileSync('output.mp3'), MessageType.audio, {mimetype: Mimetype.mp4Audio, quoted: message.data, ptt: true,quoted: { key: { participant : '0@s.whatsapp.net'},message: {orderMessage: {itemCount : 990,status: 1,surface : 1,message: Config.SKV,orderTitle: `THIS IS NEW?`,thumbnail: img, sellerJid: Config.JID }}}});
 
 });}));
 
@@ -146,22 +146,6 @@ Alexa.addCommand({pattern: 'unvoice', fromMe: true, desc: Lang.UV_DESC}, (async 
             await message.sendMessage(fs.readFileSync('output.mp3'), MessageType.audio, {mimetype: Mimetype.mp4Audio, ptt: true});
 });}));
 
-Alexa.addCommand({pattern: 'forward ?(.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {    
-    if (message.reply_message === false);
-    var location = await message.client.downloadAndSaveMediaMessage({
-        key: {
-            remoteJid: message.reply_message.jid,
-            id: message.reply_message.id
-        },
-        message: message.reply_message.data.quotedMessage
-    });
-let id = match[1];
-    ffmpeg(location)
-        .format('mp4')
-        .save('output.mp4')
-        .on('end', async () => {
-            await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {mimetype: Mimetype.mpeg, quoted: message.data, ptt: true,quoted: { key: { participant : '0@s.whatsapp.net'},message: {orderMessage: {itemCount : 990,status: 1,surface : 1,message: Config.BOT,orderTitle: `THIS IS NEW?`,thumbnail: img, sellerJid: Config.JID }}}})
-});}));
 
 Alexa.addCommand({pattern: '1', fromMe: true, dontAddCommandList: true}, (async (message, match) => {    
     if (message.reply_message === false);
