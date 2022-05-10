@@ -1,1 +1,94 @@
-function _0x5dd1(){const _0x5cace0=['Note\x20this','917025994178@s.whatsapp.net','⊢‒‒‒\x20⋈\x20ᴀʟᴇxᴀ\x20ᴡᴀ\x20ʙᴏᴛ\x20⋈\x20‒‒‒⊣','2QERQKc','ʜɪ/ʙʀᴏ','YAK','INSTA_LINK','AUTO_STICKER','KICKME_MESSAGE','𝐴𝑙𝑒𝑥𝑎🎗️/💝/✨/📝','DEBUG','https://instagram.com/jasil_xo','HEROKU_APP_NAME','HEROKU','ADD_MESSAGE','VERIFIED','INBO_BLOCK','GAN_IMAGE','false','15099MQpuGw','WEL_GIF','YT_PASSWORD','MUTE_MESSAGE','./config.env','GIF_BYE','PROMOTE_MESSAGE','sequelize','DIALOGUE','DEMOTE_MESSAGE','REMOVE_BG_API_KEY','917025994178','610104yXHBUT','UNBLOCK_MESSAGE','919072790587-1635775355','https://wa.me/917025994178','BLOCK_CHAT','ALL_IMG','2327096fuxFgA','jsl-Abu','https://i.imgur.com/nErXUGj.mp4','AUTO_BİO','ᴍᴀᴅᴇ\x20ʙʏ\x20ᴀʟᴇxᴀ','NO_ONLINE','NO_LOG','LANGUAGE','default','SUDO','https://te.legra.ph/file/a9e518393144caf1ac505.jpg','BLOCK_MESSAGE','THERI_KICK','BOT_NAME','DISABLE_STICKER','TAG_HEADER','4112cxyBZh','ALEXA_CODE','ANTİ_LİNK','GROUP_LINK','exports','https://t.me/remasterplugin','HEROKU_API_KEY','true','ALL_NUMBER','NUMBER','5046525XNPssF','AFK_MESSAGE','ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ\x20ꜱᴏɴɢ','public','v7.3.6','SONGD','./whatsasena.db','one','1041674ilZhdy','https://i.imgur.com/Z1jCYGN.mp4','V_HEADER','THERI_LIST','OWNER_NAME','ALIVE_BUTTON','27634923280-1617736751','TAG_REPLY','toUpperCase','WORK_TYPE','HANDLERS','CHAT_BOT','BGM_DURATION','https://i.hizliresim.com/loUtAb.jpg','BAN_MESSAGE','DEPLOYER','existsSync','SEND_READ','dotenv','^[.!;]','BOT_PRESENCE','ALIVE_MESSAGE','DISABLE_JID_BGM_FILTER','ᴀʟᴇxᴀ\x20ᴡᴀ\x20ʙᴏᴛ','ABU-SER','online','6492835GDQipP','CHANGE_BGM_TO','BGM_FILTER','DATABASE_URL','UNMUTE_MESSAGE','39999600','env','ALL_CAPTION','1278291kHJgkN'];_0x5dd1=function(){return _0x5cace0;};return _0x5dd1();}function _0x17f9(_0x10699a,_0x7d8764){const _0x5dd150=_0x5dd1();return _0x17f9=function(_0x17f9ff,_0x132be1){_0x17f9ff=_0x17f9ff-0xcb;let _0x1c7824=_0x5dd150[_0x17f9ff];return _0x1c7824;},_0x17f9(_0x10699a,_0x7d8764);}const _0xf8aa44=_0x17f9;(function(_0x4cdd36,_0x3c1d67){const _0x5d0e30=_0x17f9,_0x4eeed5=_0x4cdd36();while(!![]){try{const _0x361ff6=parseInt(_0x5d0e30(0x12c))/0x1*(parseInt(_0x5d0e30(0xe8))/0x2)+-parseInt(_0x5d0e30(0xe4))/0x3+parseInt(_0x5d0e30(0x10a))/0x4+parseInt(_0x5d0e30(0xdc))/0x5+-parseInt(_0x5d0e30(0x104))/0x6+-parseInt(_0x5d0e30(0xf8))/0x7*(parseInt(_0x5d0e30(0x11a))/0x8)+-parseInt(_0x5d0e30(0x124))/0x9;if(_0x361ff6===_0x3c1d67)break;else _0x4eeed5['push'](_0x4eeed5['shift']());}catch(_0x10c748){_0x4eeed5['push'](_0x4eeed5['shift']());}}}(_0x5dd1,0xb0f4b));const {Sequelize}=require(_0xf8aa44(0xff)),fs=require('fs');if(fs[_0xf8aa44(0xd2)]('config.env'))require(_0xf8aa44(0xd4))['config']({'path':_0xf8aa44(0xfc)});function convertToBool(_0x19cea7,_0x59e663=_0xf8aa44(0x121)){return _0x19cea7===_0x59e663?!![]:![];}DATABASE_URL=process[_0xf8aa44(0xe2)]['DATABASE_URL']===undefined?'./whatsasena.db':process['env'][_0xf8aa44(0xdf)],DEBUG=process[_0xf8aa44(0xe2)][_0xf8aa44(0xef)]===undefined?![]:convertToBool(process[_0xf8aa44(0xe2)][_0xf8aa44(0xef)]),module[_0xf8aa44(0x11e)]={'VERSION':_0xf8aa44(0x128),'CHANNEL':_0xf8aa44(0x11f),'SESSION':process[_0xf8aa44(0xe2)]['ALEXA_CODE']===undefined?'':process['env'][_0xf8aa44(0x11b)],'ANTİLİNK':process['env']['ANTİ_LİNK']===undefined?_0xf8aa44(0xf7):process['env'][_0xf8aa44(0x11c)],'AUTOBİO':process[_0xf8aa44(0xe2)][_0xf8aa44(0x10d)]===undefined?_0xf8aa44(0xf7):process['env']['AUTO_BİO'],'GANSTYLE':process[_0xf8aa44(0xe2)][_0xf8aa44(0xf6)]===undefined?_0xf8aa44(0xcf):process[_0xf8aa44(0xe2)][_0xf8aa44(0xf6)],'LANG':process['env'][_0xf8aa44(0x111)]===undefined?'TR':process['env'][_0xf8aa44(0x111)][_0xf8aa44(0x134)](),'ALIVEMSG':process[_0xf8aa44(0xe2)]['ALIVE_MESSAGE']===undefined?_0xf8aa44(0x112):process['env'][_0xf8aa44(0xd7)],'KICKMEMSG':process[_0xf8aa44(0xe2)][_0xf8aa44(0xed)]===undefined?'default':process[_0xf8aa44(0xe2)][_0xf8aa44(0xed)],'BLOCKCHAT':process['env'][_0xf8aa44(0x108)]===undefined?![]:process['env'][_0xf8aa44(0x108)],'WELCOME':process[_0xf8aa44(0xe2)]['WELCOME']===undefined?'pp':process['env']['WELCOME'],'OWNER':process[_0xf8aa44(0xe2)][_0xf8aa44(0x130)]===undefined?_0xf8aa44(0x10b):process[_0xf8aa44(0xe2)][_0xf8aa44(0x130)],'PHONE':process[_0xf8aa44(0xe2)][_0xf8aa44(0x122)]===undefined?_0xf8aa44(0x103):process['env']['ALL_NUMBER'],'NUMBER':process[_0xf8aa44(0xe2)]['NUMBER']===undefined?_0xf8aa44(0x107):process[_0xf8aa44(0xe2)][_0xf8aa44(0x123)],'OA_NAME':process[_0xf8aa44(0xe2)][_0xf8aa44(0xd1)]===undefined?_0xf8aa44(0xda):process[_0xf8aa44(0xe2)]['DEPLOYER'],'ALL':process[_0xf8aa44(0xe2)][_0xf8aa44(0xe3)]===undefined?_0xf8aa44(0x10e):process[_0xf8aa44(0xe2)][_0xf8aa44(0xe3)],'MENTION':process['env'][_0xf8aa44(0x133)]===undefined?_0xf8aa44(0xe6):process[_0xf8aa44(0xe2)][_0xf8aa44(0x133)],'ADDMSG':process[_0xf8aa44(0xe2)][_0xf8aa44(0xf3)]===undefined?_0xf8aa44(0x112):process[_0xf8aa44(0xe2)]['ADD_MESSAGE'],'PLKS':process[_0xf8aa44(0xe2)][_0xf8aa44(0x12f)]===undefined?![]:process[_0xf8aa44(0xe2)]['THERI_LIST'],'AFPLK':process[_0xf8aa44(0xe2)][_0xf8aa44(0xfa)]===undefined?![]:process[_0xf8aa44(0xe2)][_0xf8aa44(0xfa)],'ABU_SER':process[_0xf8aa44(0xe2)][_0xf8aa44(0x131)]===undefined?_0xf8aa44(0xe9):process['env'][_0xf8aa44(0x131)],'MUTEMSG':process[_0xf8aa44(0xe2)][_0xf8aa44(0xfb)]===undefined?_0xf8aa44(0x112):process['env'][_0xf8aa44(0xfb)],'BGMFILTER':process[_0xf8aa44(0xe2)][_0xf8aa44(0xde)]===undefined?![]:convertToBool(process[_0xf8aa44(0xe2)][_0xf8aa44(0xde)]),'INBO':process[_0xf8aa44(0xe2)]['INBO_BLOCK']===undefined?'false':process['env'][_0xf8aa44(0xf5)],'INBO1':process[_0xf8aa44(0xe2)][_0xf8aa44(0xf5)]===undefined?_0xf8aa44(0x121):process[_0xf8aa44(0xe2)][_0xf8aa44(0xf5)],'DISBGM':process[_0xf8aa44(0xe2)][_0xf8aa44(0xd8)]===undefined?![]:process[_0xf8aa44(0xe2)][_0xf8aa44(0xd8)],'STICKERP':process['env'][_0xf8aa44(0xec)]===undefined?!![]:convertToBool(process[_0xf8aa44(0xe2)][_0xf8aa44(0xec)]),'DISSTICKER':process[_0xf8aa44(0xe2)][_0xf8aa44(0x118)]===undefined?![]:process[_0xf8aa44(0xe2)]['DISABLE_STICKER'],'BOT':process['env'][_0xf8aa44(0x117)]===undefined?_0xf8aa44(0xe7):process['env']['BOT_NAME'],'BOTSK':process[_0xf8aa44(0xe2)][_0xf8aa44(0x117)]===undefined?'ᴀʟᴇxᴀ\x20ᴡᴀ\x20ʙᴏᴛ':process[_0xf8aa44(0xe2)]['BOT_NAME'],'LOGOSK':process[_0xf8aa44(0xe2)][_0xf8aa44(0x109)]===undefined?_0xf8aa44(0x114):process[_0xf8aa44(0xe2)][_0xf8aa44(0x109)],'SKDL':process[_0xf8aa44(0xe2)]['DIALOGUE']===undefined?_0xf8aa44(0xd9):process[_0xf8aa44(0xe2)][_0xf8aa44(0x100)],'JID':process[_0xf8aa44(0xe2)][_0xf8aa44(0xf4)]===undefined?'0@s.whatsapp.net':process['env'][_0xf8aa44(0xf4)],'SKV':process[_0xf8aa44(0xe2)][_0xf8aa44(0x12e)]===undefined?'*YOUR\x20HEADER\x20HERE*':process[_0xf8aa44(0xe2)][_0xf8aa44(0x12e)],'NOLOG':process[_0xf8aa44(0xe2)][_0xf8aa44(0x110)]===undefined?_0xf8aa44(0x121):process[_0xf8aa44(0xe2)][_0xf8aa44(0x110)],'THERI_KICK':process[_0xf8aa44(0xe2)][_0xf8aa44(0x116)]===undefined?_0xf8aa44(0xf7):process[_0xf8aa44(0xe2)][_0xf8aa44(0x116)],'SONGD':process[_0xf8aa44(0xe2)][_0xf8aa44(0x129)]===undefined?_0xf8aa44(0x126):process[_0xf8aa44(0xe2)][_0xf8aa44(0x129)],'SONGU':process['env']['SONGU']===undefined?'ᴜᴘʟᴏᴀᴅɪɴɢ\x20ꜱᴏɴɢ':process['env']['SONGU'],'CHATBOT':process[_0xf8aa44(0xe2)][_0xf8aa44(0xcd)]===undefined?_0xf8aa44(0xf7):process[_0xf8aa44(0xe2)][_0xf8aa44(0xcd)],'SAID':process[_0xf8aa44(0xe2)][_0xf8aa44(0xce)]===undefined?_0xf8aa44(0xe1):process[_0xf8aa44(0xe2)][_0xf8aa44(0xce)],'BLOCKMSG':process[_0xf8aa44(0xe2)][_0xf8aa44(0x115)]===undefined?_0xf8aa44(0x112):process[_0xf8aa44(0xe2)][_0xf8aa44(0x115)],'UNBLOCKMSG':process[_0xf8aa44(0xe2)][_0xf8aa44(0x105)]===undefined?'default':process['env'][_0xf8aa44(0x105)],'UNMUTEMSG':process[_0xf8aa44(0xe2)][_0xf8aa44(0xe0)]===undefined?'default':process[_0xf8aa44(0xe2)][_0xf8aa44(0xe0)],'GEAR':process['env'][_0xf8aa44(0xdd)]===undefined?_0xf8aa44(0x12b):process[_0xf8aa44(0xe2)]['CHANGE_BGM_TO'],'WORKTYPE':process[_0xf8aa44(0xe2)][_0xf8aa44(0xcb)]===undefined?_0xf8aa44(0x127):process[_0xf8aa44(0xe2)][_0xf8aa44(0xcb)],'PROMOTEMSG':process['env'][_0xf8aa44(0xfe)]===undefined?_0xf8aa44(0x112):process[_0xf8aa44(0xe2)][_0xf8aa44(0xfe)],'DEMOTEMSG':process[_0xf8aa44(0xe2)][_0xf8aa44(0x101)]===undefined?_0xf8aa44(0x112):process[_0xf8aa44(0xe2)][_0xf8aa44(0x101)],'BOT_PRESENCE':process[_0xf8aa44(0xe2)][_0xf8aa44(0xd6)]===undefined?_0xf8aa44(0xdb):process[_0xf8aa44(0xe2)][_0xf8aa44(0xd6)],'PLK':process[_0xf8aa44(0xe2)][_0xf8aa44(0x130)]===undefined?_0xf8aa44(0x112):process['env'][_0xf8aa44(0x130)],'BANMSG':process['env'][_0xf8aa44(0xd0)]===undefined?_0xf8aa44(0x112):process[_0xf8aa44(0xe2)]['BAN_MESSAGE'],'INSTA':process[_0xf8aa44(0xe2)][_0xf8aa44(0xeb)]===undefined?_0xf8aa44(0xf0):process['env'][_0xf8aa44(0xeb)],'GROUP':process[_0xf8aa44(0xe2)]['GROUP_LINK']===undefined?'https://chat.whatsapp.com/Bq0eHs3UpGJ2BKIHOmy7mk':process[_0xf8aa44(0xe2)][_0xf8aa44(0x11d)],'AFKMSG':process[_0xf8aa44(0xe2)]['AFK_MESSAGE']===undefined?_0xf8aa44(0x112):process['env'][_0xf8aa44(0x125)],'WEL_GIF':process[_0xf8aa44(0xe2)][_0xf8aa44(0xf9)]===undefined?_0xf8aa44(0x10c):process[_0xf8aa44(0xe2)][_0xf8aa44(0xf9)],'GIF_BYE':process[_0xf8aa44(0xe2)][_0xf8aa44(0xfd)]===undefined?_0xf8aa44(0x12d):process[_0xf8aa44(0xe2)][_0xf8aa44(0xfd)],'ALLEMOJI':process['env']['CMD_LIST']===undefined?_0xf8aa44(0xee):process[_0xf8aa44(0xe2)]['CMD_LIST'],'HANDLERS':process[_0xf8aa44(0xe2)]['HANDLERS']===undefined?_0xf8aa44(0xd5):process[_0xf8aa44(0xe2)][_0xf8aa44(0xcc)],'TAGPLK':process[_0xf8aa44(0xe2)][_0xf8aa44(0x119)]===undefined?_0xf8aa44(0xe5):process[_0xf8aa44(0xe2)][_0xf8aa44(0x119)],'SEND_READ':process[_0xf8aa44(0xe2)][_0xf8aa44(0xd3)]===undefined?![]:convertToBool(process[_0xf8aa44(0xe2)][_0xf8aa44(0xd3)]),'YAK':process[_0xf8aa44(0xe2)]['YAK']===undefined?'917025994178,0':process[_0xf8aa44(0xe2)][_0xf8aa44(0xea)],'BRANCH':'master','HEROKU':{'HEROKU':process[_0xf8aa44(0xe2)][_0xf8aa44(0xf2)]===undefined?![]:convertToBool(process['env'][_0xf8aa44(0xf2)]),'API_KEY':process[_0xf8aa44(0xe2)][_0xf8aa44(0x120)]===undefined?'':process[_0xf8aa44(0xe2)][_0xf8aa44(0x120)],'APP_NAME':process['env'][_0xf8aa44(0xf1)]===undefined?'':process[_0xf8aa44(0xe2)][_0xf8aa44(0xf1)]},'DATABASE_URL':DATABASE_URL,'DATABASE':DATABASE_URL===_0xf8aa44(0x12a)?new Sequelize({'dialect':'sqlite','storage':DATABASE_URL,'logging':DEBUG}):new Sequelize(DATABASE_URL,{'dialectOptions':{'ssl':{'require':!![],'rejectUnauthorized':![]}},'logging':DEBUG}),'RBG_API_KEY':process[_0xf8aa44(0xe2)][_0xf8aa44(0x102)]===undefined?![]:process[_0xf8aa44(0xe2)][_0xf8aa44(0x102)],'NO_ONLINE':process[_0xf8aa44(0xe2)][_0xf8aa44(0x10f)]===undefined?!![]:convertToBool(process[_0xf8aa44(0xe2)][_0xf8aa44(0x10f)]),'SUDO':process[_0xf8aa44(0xe2)][_0xf8aa44(0x113)]===undefined?![]:process['env'][_0xf8aa44(0x113)],'DEBUG':DEBUG,'WITAI_API':'TEYMELA6DMC4XB5YM3SPTTQWUUIBKURG','SUPPORT':_0xf8aa44(0x106),'SUPPORT2':_0xf8aa44(0x132),'SUPPORT3':'905511384572-1621015274'};
+/* Copyright (C) 2020 Yusuf Usta.
+WhatsAsena - Yusuf Usta
+*/
+
+const { Sequelize } = require('sequelize');
+const fs = require('fs');
+if (fs.existsSync('config.env')) require('dotenv').config({ path: './config.env' });
+
+// Özel Fonksiyonlarımız
+function convertToBool(text, fault = 'true') {
+    return text === fault ? true : false;
+}
+
+DATABASE_URL = process.env.DATABASE_URL === undefined ? './whatsasena.db' : process.env.DATABASE_URL;
+DEBUG = process.env.DEBUG === undefined ? false : convertToBool(process.env.DEBUG);
+
+module.exports = {
+    VERSION: 'v7.3.6',
+    CHANNEL: 'https://t.me/remasterplugin',
+    SESSION: process.env.ALEXA_CODE === undefined ? '' : process.env.ALEXA_CODE,
+    ANTİLİNK: process.env.ANTİ_LİNK === undefined ? 'false' : process.env.ANTİ_LİNK,
+    AUTOBİO: process.env.AUTO_BİO === undefined ? 'false' : process.env.AUTO_BİO,
+    GANSTYLE: process.env.GAN_IMAGE === undefined ? 'https://i.hizliresim.com/loUtAb.jpg' : process.env.GAN_IMAGE,
+    LANG: process.env.LANGUAGE === undefined ? 'TR' : process.env.LANGUAGE.toUpperCase(),
+    ALIVEMSG: process.env.ALIVE_MESSAGE === undefined ? 'default' : process.env.ALIVE_MESSAGE,
+    KICKMEMSG: process.env.KICKME_MESSAGE === undefined ? 'default' : process.env.KICKME_MESSAGE,
+    BLOCKCHAT: process.env.BLOCK_CHAT === undefined ? false : process.env.BLOCK_CHAT,
+    WELCOME: process.env.WELCOME === undefined ? 'pp' : process.env.WELCOME,
+    OWNER: process.env.OWNER_NAME === undefined ? 'jsl-Abu' : process.env.OWNER_NAME,
+    PHONE: process.env.ALL_NUMBER === undefined ? '917025994178' : process.env.ALL_NUMBER,   
+    NUMBER: process.env.NUMBER === undefined ? 'https://wa.me/917025994178' : process.env.NUMBER, 
+    OA_NAME: process.env.DEPLOYER === undefined ? 'ABU-SER' : process.env.DEPLOYER,
+    ALL: process.env.ALL_CAPTION === undefined ? 'ᴍᴀᴅᴇ ʙʏ ᴀʟᴇxᴀ' : process.env.ALL_CAPTION,
+    MENTION: process.env.TAG_REPLY === undefined ? '917025994178@s.whatsapp.net' : process.env.TAG_REPLY,
+    ADDMSG: process.env.ADD_MESSAGE === undefined ? 'default' : process.env.ADD_MESSAGE,
+    PLKS: process.env.THERI_LIST === undefined ? false : process.env.THERI_LIST,
+    AFPLK: process.env.YT_PASSWORD === undefined ? false : process.env.YT_PASSWORD,
+    ABU_SER: process.env.ALIVE_BUTTON === undefined ? 'ʜɪ/ʙʀᴏ' : process.env.ALIVE_BUTTON,
+    MUTEMSG: process.env.MUTE_MESSAGE === undefined ? 'default' : process.env.MUTE_MESSAGE,
+    BGMFILTER: process.env.BGM_FILTER === undefined ? false : convertToBool(process.env.BGM_FILTER),
+    INBO: process.env.INBO_BLOCK === undefined ? 'false' : process.env.INBO_BLOCK,
+    INBO1: process.env.INBO_BLOCK === undefined ? 'true' : process.env.INBO_BLOCK,
+    DISBGM: process.env.DISABLE_JID_BGM_FILTER === undefined ? false : process.env.DISABLE_JID_BGM_FILTER,
+    STICKERP: process.env.AUTO_STICKER === undefined ? true : convertToBool(process.env.AUTO_STICKER),
+    DISSTICKER: process.env.DISABLE_STICKER === undefined ? false : process.env.DISABLE_STICKER,
+    BOT: process.env.BOT_NAME === undefined ? '⊢‒‒‒ ⋈ ᴀʟᴇxᴀ ᴡᴀ ʙᴏᴛ ⋈ ‒‒‒⊣' : process.env.BOT_NAME,
+    BOTSK: process.env.BOT_NAME === undefined ? 'ᴀʟᴇxᴀ ᴡᴀ ʙᴏᴛ' : process.env.BOT_NAME,
+    LOGOSK: process.env.ALL_IMG === undefined ? 'https://te.legra.ph/file/a9e518393144caf1ac505.jpg' : process.env.ALL_IMG,
+    SKDL: process.env.DIALOGUE === undefined ? 'ᴀʟᴇxᴀ ᴡᴀ ʙᴏᴛ' : process.env.DIALOGUE,
+    JID: process.env.VERIFIED === undefined ? '0@s.whatsapp.net' : process.env.VERIFIED,
+    SKV: process.env.V_HEADER === undefined ? '*YOUR HEADER HERE*' : process.env.V_HEADER,
+    NOLOG: process.env.NO_LOG === undefined ? 'true' : process.env.NO_LOG,
+    THERI_KICK: process.env.THERI_KICK === undefined ? 'false' : process.env.THERI_KICK,
+    SONGD: process.env.SONGD === undefined ? 'ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ ꜱᴏɴɢ' : process.env.SONGD,
+    SONGU: process.env.SONGU === undefined ? 'ᴜᴘʟᴏᴀᴅɪɴɢ ꜱᴏɴɢ' : process.env.SONGU,
+    CHATBOT: process.env.CHAT_BOT === undefined ? 'false' : process.env.CHAT_BOT,
+    SAID: process.env.BGM_DURATION === undefined ? '39999600' : process.env.BGM_DURATION,
+    BLOCKMSG: process.env.BLOCK_MESSAGE === undefined ? 'default' : process.env.BLOCK_MESSAGE,
+    UNBLOCKMSG: process.env.UNBLOCK_MESSAGE === undefined ? 'default' : process.env.UNBLOCK_MESSAGE,
+    UNMUTEMSG: process.env.UNMUTE_MESSAGE === undefined ? 'default' : process.env.UNMUTE_MESSAGE,
+    GEAR: process.env.CHANGE_BGM_TO === undefined ? 'one' : process.env.CHANGE_BGM_TO,
+    WORKTYPE: process.env.WORK_TYPE === undefined ? 'public' : process.env.WORK_TYPE,
+    PROMOTEMSG: process.env.PROMOTE_MESSAGE === undefined ? 'default' : process.env.PROMOTE_MESSAGE,
+    DEMOTEMSG: process.env.DEMOTE_MESSAGE === undefined ? 'default' : process.env.DEMOTE_MESSAGE,
+    BOT_PRESENCE: process.env.BOT_PRESENCE === undefined ? 'online' : process.env.BOT_PRESENCE,
+    PLK: process.env.OWNER_NAME === undefined ? 'default' : process.env.OWNER_NAME,
+    BANMSG: process.env.BAN_MESSAGE === undefined ? 'default' : process.env.BAN_MESSAGE,
+    INSTA: process.env.INSTA_LINK === undefined ? 'https://instagram.com/jasil_xo' : process.env.INSTA_LINK,
+    GROUP: process.env.GROUP_LINK === undefined ? 'https://chat.whatsapp.com/Bq0eHs3UpGJ2BKIHOmy7mk' : process.env.GROUP_LINK,
+    AFKMSG: process.env.AFK_MESSAGE === undefined ? 'default' : process.env.AFK_MESSAGE,
+    WEL_GIF: process.env.WEL_GIF === undefined ? 'https://i.imgur.com/nErXUGj.mp4' : process.env.WEL_GIF,
+    GIF_BYE: process.env.GIF_BYE === undefined ? 'https://i.imgur.com/Z1jCYGN.mp4' : process.env.GIF_BYE,
+    ALLEMOJI: process.env.CMD_LIST === undefined ? '𝐴𝑙𝑒𝑥𝑎🎗️/💝/✨/📝' : process.env.CMD_LIST,
+    HANDLERS: process.env.HANDLERS === undefined ? '^[.!;]' : process.env.HANDLERS,
+    TAGPLK: process.env.TAG_HEADER === undefined ? 'Note this' : process.env.TAG_HEADER,
+    SEND_READ: process.env.SEND_READ === undefined ? false : convertToBool(process.env.SEND_READ),
+    YAK: process.env.YAK === undefined ? '917025994178,0' : process.env.YAK,
+    BRANCH: 'master',
+    HEROKU: {
+        HEROKU: process.env.HEROKU === undefined ? false : convertToBool(process.env.HEROKU),
+        API_KEY: process.env.HEROKU_API_KEY === undefined ? '' : process.env.HEROKU_API_KEY,
+        APP_NAME: process.env.HEROKU_APP_NAME === undefined ? '' : process.env.HEROKU_APP_NAME
+    },
+    DATABASE_URL: DATABASE_URL,
+    DATABASE: DATABASE_URL === './whatsasena.db' ? new Sequelize({ dialect: "sqlite", storage: DATABASE_URL, logging: DEBUG }) : new Sequelize(DATABASE_URL, { dialectOptions: { ssl: { require: true, rejectUnauthorized: false } }, logging: DEBUG }),
+    RBG_API_KEY: process.env.REMOVE_BG_API_KEY === undefined ? false : process.env.REMOVE_BG_API_KEY,
+    NO_ONLINE: process.env.NO_ONLINE === undefined ? true : convertToBool(process.env.NO_ONLINE),
+    SUDO: process.env.SUDO === undefined ? false : process.env.SUDO,
+    DEBUG: DEBUG,
+    WITAI_API: "TEYMELA6DMC4XB5YM3SPTTQWUUIBKURG",
+    SUPPORT: "919072790587-1635775355",
+    SUPPORT2: "27634923280-1617736751",
+    SUPPORT3: "905511384572-1621015274"
+};
