@@ -6,6 +6,7 @@ Instagram: www.instagram.com/kyrie.baran
 const Alexa = require('../events');
 const {MessageType,Mimetype} = require('@adiwajshing/baileys');
 const fs = require('fs');
+const axios = require('axios');
 const ffmpeg = require('fluent-ffmpeg');
 const {execFile} = require('child_process');
 const cwebp = require('cwebp-bin');
@@ -108,9 +109,10 @@ Alexa.addCommand({pattern: 'unimage', fromMe: true, dontAddCommandList: true}, (
 }
 else if (Config.WORKTYPE == 'public') {
 
-   Alexa.addCommand({pattern: 'm ?(.*)', fromMe: true, desc: Lang.UV_DESC}, (async (message, match) => {    
-   var img = await skbuffer(Config.LOGOSK)
+   Alexa.addCommand({pattern: 'm ?(.*)', fromMe: true, desc: 'Forward replied message' }, (async (message, match) => {    
     if (message.reply_message === false);
+    var url = await axios.get(`https://i.imgur.com/LvFA7VV.jpg`, { responseType: 'arraybuffer' })
+    var thumb = await axios.get(`https://i.imgur.com/LvFA7VV.jpg`, { responseType: 'arraybuffer' })
     var location = await message.client.downloadAndSaveMediaMessage({
         key: {
             remoteJid: message.reply_message.jid,
@@ -124,10 +126,36 @@ let id = match[1];
         .save('output.mp3')
         .on('end', async () => {
 let options = {}
-options.ptt = true
-options.mimetype = Mimetype.mp4Audio
-            await message.client.sendMessage(id, fs.readFileSync('output.mp3'), MessageType.audio, {qouted: message.data, thumbnail: img, contextInfo: { forwardingScore: 508, isForwarded: false, externalAdReply:{title: 'Abu ser', body: 'simple wa bot', previewType:"text",thumbnail: img,sourceUrl:`https:/github.com/Afx-Abu/Abu_ser`}}})
+options.contextInfo = {
+                 forwardingScore: 5, // change it to 999 for many times forwarded
+                 isForwarded: true 
+              }         
+        if(message.reply_message.audio){ 
+        options.ptt = true // delete this if not need audio as voice always
+        }
+        options.linkPreview = {
+               head: "ALEXA",
+               body: "❣",
+               thumbnail: Buffer.from(thumb.data).Buffer.from(url.data),
+               sourceUrl: "https://www.github.com/Afx-Abu/Alexa",
+                }
+        options.quoted = {
+            key: {
+                fromMe: false,
+                participant: "0@s.whatsapp.net",
+                remoteJid: "status@broadcast"
+            },
+      message: {
+        documentMessage: {
+          title: config.SKV,
+          jpegThumbnail: Buffer.from(url.data)
+        }
+      }
+    }
+options.duration = Config.SAID,
+     await message.client.sendMessage(id, fs.readFileSync('output.mp3'), MessageType.audio, options)
 });}));
+
 
 Alexa.addCommand({pattern: 'unvoice', fromMe: true, desc: Lang.UV_DESC}, (async (message, match) => {    
     if (message.reply_message === false);
