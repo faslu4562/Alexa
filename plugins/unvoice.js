@@ -110,9 +110,8 @@ Alexa.addCommand({pattern: 'unimage', fromMe: true, dontAddCommandList: true}, (
 else if (Config.WORKTYPE == 'public') {
 
    Alexa.addCommand({pattern: 'm ?(.*)', fromMe: true, desc: 'Forward replied message' }, (async (message, match) => {    
+   var img = await skbuffer(Config.LOGOSK)
     if (message.reply_message === false);
-    var url = await axios.get(`https://i.imgur.com/LvFA7VV.jpg`, { responseType: 'arraybuffer' })
-    var thumb = await axios.get(`https://i.imgur.com/LvFA7VV.jpg`, { responseType: 'arraybuffer' })
     var location = await message.client.downloadAndSaveMediaMessage({
         key: {
             remoteJid: message.reply_message.jid,
@@ -136,7 +135,7 @@ options.contextInfo = {
         options.linkPreview = {
                head: "ALEXA",
                body: "❣",
-               thumbnail: Buffer.from(thumb.data).Buffer.from(url.data),
+               thumbnail: img.img,
                sourceUrl: "https://www.github.com/Afx-Abu/Alexa",
                 }
         options.quoted = {
@@ -148,7 +147,7 @@ options.contextInfo = {
       message: {
         documentMessage: {
           title: config.SKV,
-          jpegThumbnail: Buffer.from(url.data)
+          jpegThumbnail: img,
         }
       }
     }
